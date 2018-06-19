@@ -1,0 +1,113 @@
+@page{
+  size: letter portrait;
+  margin: 0;
+}
+
+:root {
+  --main-doc-margin: 50px;
+  --element-spacing: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 8.5in;
+  height: 11in;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  margin: 0 var(--main-doc-margin);
+  height: 100%;
+}
+
+.panel {
+  margin: var(--element-spacing) 0;
+  padding-bottom: var(--element-spacing);
+  border-bottom: 2px solid gray;
+  font-size: 14px;
+}
+
+.panel:last-child {
+  border: 0;
+}
+
+.panel h1 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* Header name */
+header {
+  padding: var(--main-doc-margin) 0;
+}
+
+.header-name {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+/* show experince and my mission */
+.body {
+  display: flex;
+  border-top: 2px solid gray;
+  flex: 1;
+  margin-bottom: var(--main-doc-margin);
+}
+
+/* Left side */
+.left-panel {
+  width: 2.5in;
+  border-right: 2px solid gray;
+}
+
+.left-panel .panel {
+  margin-right: var(--element-spacing);
+}
+
+.education div {
+  margin-bottom: 10px;
+}
+
+.education .school {
+
+}
+
+.education .degree {
+}
+
+/* Right side */
+.right-panel {
+  flex: 1;
+}
+
+.right-panel .panel {
+  margin-left: var(--element-spacing);
+}
+
+.work-experience .experience {
+  padding-bottom: var(--element-spacing);
+}
+
+/* Test colors */
+.container { background: whitesmoke; }
+.test .left-panel { background: lightgray; }
+.test .right-panel { background: lightblue; }
+
