@@ -92,17 +92,17 @@ header {
 }
 
 .github-icon {
-  background: url('GitHub-Mark-32px.png') no-repeat center center;
+  background: url('../images/GitHub-Mark-32px.png') no-repeat center center;
   background-size: contain;
 }
 
 .codepen-icon {
-  background: url('Button-Black-Large.png') no-repeat center center;
+  background: url('../images/Button-Black-Large.png') no-repeat center center;
   background-size: contain;
 }
 
 .web-icon {
-  background: url('world-wide-web.png') no-repeat center center;
+  background: url('../images/world-wide-web.png') no-repeat center center;
   background-size: contain;
 }
 
