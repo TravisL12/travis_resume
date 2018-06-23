@@ -4,11 +4,17 @@
 }
 
 :root {
-  --main-doc-margin: 50px;
+  --main-doc-margin: 40px;
+  --heading-color: #444;
+  --sub-heading-color: #888;
   --element-spacing: 20px;
+  --thin-border-separator: 1px solid gray;
+  --thick-border-separator: 2px solid gray;
+  --paragraph-line-height: 1.4;
 }
 
 body {
+  color: var(--heading-color);
   margin: 0;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -41,7 +47,7 @@ ul li {
 .panel {
   margin: var(--element-spacing) 0;
   padding-bottom: var(--element-spacing);
-  border-bottom: 2px solid gray;
+  border-bottom: var(--thin-border-separator);
   font-size: 14px;
 }
 
@@ -56,7 +62,10 @@ ul li {
 
 /* Header name */
 header {
-  padding: var(--main-doc-margin) 0;
+  padding: var(--main-doc-margin) 0 calc(var(--main-doc-margin) - 5px);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .header-name {
@@ -64,33 +73,81 @@ header {
   font-weight: 800;
 }
 
+.header-title {
+  color: var(--sub-heading-color);
+}
+
+.header-portfolio {
+  font-size: 12px;
+  line-height: 2.2;
+  margin-top: 6px;
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.github-icon {
+  background: url('GitHub-Mark-32px.png') no-repeat center center;
+  background-size: contain;
+}
+
+.codepen-icon {
+  background: url('Button-Black-Large.png') no-repeat center center;
+  background-size: contain;
+}
+
+.web-icon {
+  background: url('world-wide-web.png') no-repeat center center;
+  background-size: contain;
+}
+
 /* show experince and my mission */
 .body {
   display: flex;
-  border-top: 2px solid gray;
   flex: 1;
+  border-top: var(--thick-border-separator);
   margin-bottom: var(--main-doc-margin);
+}
+
+.body-mission .objective {
+  line-height: var(--paragraph-line-height);
 }
 
 /* Left side */
 .left-panel {
   width: 2.5in;
-  border-right: 2px solid gray;
+  border-right: var(--thick-border-separator);
 }
 
 .left-panel .panel {
   margin-right: var(--element-spacing);
 }
 
-.education div {
-  margin-bottom: 10px;
+.skill-set ul li {
+  line-height: 1.8;
 }
 
-.education .school {
-
+.contact ul li {
+  line-height: var(--paragraph-line-height);
 }
 
-.education .degree {
+/* Education */
+.education p {
+  line-height: var(--paragraph-line-height);
+}
+
+.education-item + .education-item {
+  margin-top: var(--element-spacing);
+}
+
+.education .year,
+.education .location {
+  color: var(--sub-heading-color);
 }
 
 /* Right side */
@@ -102,12 +159,30 @@ header {
   margin-left: var(--element-spacing);
 }
 
-.work-experience .experience {
-  padding-bottom: var(--element-spacing);
+/* Experience */
+.experience + .experience {
+  padding-top: 30px;
+}
+
+.experience .company,
+.experience .title {
+  margin-bottom: 10px;
+}
+
+.experience .company {
+  font-size: 18px;
+}
+
+.experience .title {
+  color: var(--sub-heading-color);
+}
+
+.experience .description {
+  line-height: var(--paragraph-line-height);
 }
 
 /* Test colors */
-.container { background: whitesmoke; }
+.test.container { background: whitesmoke; }
 .test .left-panel { background: lightgray; }
 .test .right-panel { background: lightblue; }
 

@@ -9,10 +9,11 @@ class Education {
 
   createHtml () {
     return `
-    <div>
-      <p class="degree">${this.degree}</p>
+    <div class="education-item">
+      <p class="degree">${this.degree || ''}</p>
       <p class="school">${this.school}</p>
       <p class="year">${this.year}</p>
+      <p class="location">${this.location}</p>
     </div>
     `;
   }
@@ -25,7 +26,7 @@ class Education {
 
 const education = [
   {
-    school: 'UC Riverside',
+    school: 'Univ. of California at Riverside',
     degree: 'BS Theoretical Physics',
     year: '1999 - 2004',
     location: 'Riverside, CA',
@@ -38,9 +39,8 @@ const education = [
   },
   {
     school: 'Dev Bootcamp',
-    degree: 'I finished it',
     year: 'Summer 2013',
-    location: 'San Francisco',
+    location: 'San Francisco, CA',
   },
 ];
 
