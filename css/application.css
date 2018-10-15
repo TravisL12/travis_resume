@@ -4,7 +4,7 @@
 }
 
 :root {
-  --main-doc-margin: 40px;
+  --main-doc-margin: 30px;
   --heading-color: #444;
   --sub-heading-color: #888;
   --element-spacing: 20px;
@@ -120,7 +120,8 @@ header {
   margin-bottom: var(--main-doc-margin);
 }
 
-.body-mission .objective {
+.body-mission p {
+  margin: 10px 0;
   line-height: var(--paragraph-line-height);
 }
 
@@ -167,7 +168,7 @@ header {
 
 /* Experience */
 .experience + .experience {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .experience .company,
