@@ -140,6 +140,7 @@ header {
 }
 
 .skill-set ul li {
+  text-transform: uppercase;
   line-height: 1.8;
 }
 
