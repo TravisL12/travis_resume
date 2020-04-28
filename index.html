@@ -1,172 +1,180 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/application.css" />
+    <title>First Last - Resume</title>
+  </head>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="css/application.css" />
-  <title>First Last - Resume</title>
-</head>
-
-<body>
-
-  <div class='container'>
-    <div class='resume'>
-      <header>
-        <div class="name">
-          <div class="header-name">
-            <span class="first name">First Name</span>
-            <span class="last name">Last Name</span>
+  <body>
+    <div class="container">
+      <div class="resume">
+        <header>
+          <div class="name">
+            <div class="header-name">
+              <span class="first">TRAVIS</span>
+              <span class="last">LAWRENCE</span>
+            </div>
+            <div class="header-title">Front End Developer</div>
           </div>
-          <div class="header-title">JOB TITLE</div>
-        </div>
-        <div class="header-portfolio">
-          <ul>
-            <li>
-              <a href='https://personalwebsite.com' target='_blank'><span class="icon web-icon"></span>personalwebsite.com</li></a>
-            <li>
-              <a href='https://github.com/<username>' target='_blank'><span class="icon github-icon"></span>github.com/<username></li></a>
-            <li>
-              <a href='https://codepen.io/<username>' target='_blank'><span class="icon codepen-icon"></span>codepen.io/<username></li></a>
-          </ul>
-        </div>
-      </header>
-
-      <div class="body">
-
-        <div class="left-panel">
-          <div class="contact panel">
-            <h1>CONTACT</h1>
+          <div class="header-portfolio">
             <ul>
-              <li>travis.lawrence12@gmail.com</li>
-              <li>San Francisco, CA</li>
+              <li>
+                <a href="https://redundantrobot.com" target="_blank"
+                  ><span class="icon web-icon"></span>redundantrobot.com</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/TravisL12" target="_blank"
+                  ><span class="icon github-icon"></span>github.com/TravisL12</a
+                >
+              </li>
+              <li>
+                <a href="https://codepen.io/TravisL12" target="_blank"
+                  ><span class="icon codepen-icon"></span
+                  >codepen.io/TravisL12</a
+                >
+              </li>
             </ul>
           </div>
+        </header>
+        <div class="body">
+          <div class="left-panel">
+            <div class="contact panel">
+              <h1>CONTACT</h1>
+              <ul>
+                <li>travis.lawrence12@gmail.com</li>
+                <li>San Francisco, CA</li>
+              </ul>
+            </div>
 
-          <div class="skill-set panel">
-            <h1>EXPERTISE</h1>
-            <ul>
-              <li>react js</li>
-              <li>typescript / flow</li>
-              <li>jest / enzyme</li>
-              <li>redux</li>
-              <li>styled components</li>
-              <li>webkit / gulp / grunt</li>
-              <li>ruby / php / python</li>
-              <li>mysql</li>
-            </ul>
+            <div class="skill-set panel">
+              <h1>EXPERTISE</h1>
+              <ul>
+                <li>react js</li>
+                <li>typescript / flow</li>
+                <li>jest / enzyme</li>
+                <li>redux</li>
+                <li>styled components</li>
+                <li>webkit / gulp / grunt</li>
+                <li>ruby / php / python</li>
+                <li>mysql</li>
+              </ul>
+            </div>
+
+            <div class="education panel" id="education">
+              <h1>EDUCATION</h1>
+            </div>
           </div>
 
-          <div class="education panel" id="education">
-            <h1>EDUCATION</h1>
-          </div>
-        </div>
-
-        <div class="right-panel">
-          <div class="body-mission panel">
-            <p>The rotation of languages and technologies year over year is part of the job, and I'm
-              comfortable
-              knowing that there will be more to come in the years ahead.
-            </p>
-          </div>
-          <div class="work-experience panel" id="experience">
-            <h1>EXPERIENCE</h1>
-          </div>
-          <div class="other-experience panel">
-            <h1>ADDITIONAL STUFF</h1>
-            <div class="experience">
-              <p class="description">Prior to Web Development I was a juggling clown in the circus.</p>
+          <div class="right-panel">
+            <div class="body-mission panel">
+              <p>
+                The rotation of languages and technologies year over year is
+                part of the job, and I'm comfortable knowing that there will be
+                more to come in the years ahead.
+              </p>
+            </div>
+            <div class="work-experience panel" id="experience">
+              <h1>EXPERIENCE</h1>
+            </div>
+            <div class="other-experience panel">
+              <h1>ADDITIONAL STUFF</h1>
+              <div class="experience">
+                <p class="description">
+                  Prior to Web Development I was an acoustic consultant for 6
+                  years in San Francisco. I spent a lot of time measuring noise,
+                  crunching data using Excel VBA scripts, and writing reports.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="scripts/experience.js"></script>
-  <script src="scripts/education.js"></script>
-  <script>
-    const jobs = [
-      {
-        name: 'Uber',
-        title: 'Software Developer',
-        term: 'April 2018 - Current',
-        location: 'San Francisco',
-        description: `I was on the Marketplace Experimentation team and built out their
+    <script src="scripts/experience.js"></script>
+    <script src="scripts/education.js"></script>
+    <script>
+      const jobs = [
+        {
+          name: "Uber",
+          title: "Software Developer",
+          term: "April 2018 - Current",
+          location: "San Francisco",
+          description: `I was on the Marketplace Experimentation team and built out their
         experimentation platform.`,
-      },
-      {
-        name: 'Tumblr',
-        title: 'Front End Developer',
-        term: 'November 2016 - April 2018',
-        location: 'San Francisco',
-        description: `
+        },
+        {
+          name: "Tumblr",
+          title: "Front End Developer",
+          term: "November 2016 - April 2018",
+          location: "San Francisco",
+          description: `
       I worked on the <insert team> for <insert company> web platform.
       During my time a complete re-write of the web client was undertaken and I
       rebuilt the notes interface in ReactJS and Typescript with 100% test coverage using
       Enzyme and Jest.
     `,
-      },
-      {
-        name: 'Job2',
-        title: 'Full Stack Developer',
-        term: 'May 2014 - November 2016',
-        location: 'San Andreas',
-        description: `
+        },
+        {
+          name: "Job2",
+          title: "Full Stack Developer",
+          term: "May 2014 - November 2016",
+          location: "San Andreas",
+          description: `
       I rewrote <company name> internal Admin system as a web client using AngularJS and Grunt.
       During this time I began working with PHP to build out API endpoints needed for
       the Admin client to interface with. My backend work also included MySQL database
       management including writing migrations and querying the database directly.
       My final project was rebuiling <company>.com as a web client using AngularJS.
     `,
-      },
-      {
-        name: 'Job3',
-        title: 'Junior Developer',
-        term: 'October 2013 - April 2014',
-        location: 'San Andreas',
-        description: `
+        },
+        {
+          name: "Job3",
+          title: "Junior Developer",
+          term: "October 2013 - April 2014",
+          location: "San Andreas",
+          description: `
       I used the MEAN stack to create <experimental site>.me, a social network
       focused on stuff. Various ideas were prototyped
       and built out for the site including quiz games that focused on clothing
       and brands and a reward system using online coupons.
     `,
-      },
-    ];
+        },
+      ];
 
-    const education = [
-      {
-        school: 'School1',
-        degree: 'BS',
-        year: '1999 - 2004',
-        location: 'Somewhere, USA',
-      },
-      {
-        school: 'School2',
-        degree: 'MS',
-        year: '2005 - 2007',
-        location: 'Somewhere, USA',
-      },
-      {
-        school: 'School3',
-        year: 'Summer 2013',
-        location: 'Somewhere, USA',
-      },
-    ];
+      const education = [
+        {
+          school: "Univ. of California at Riverside",
+          degree: "BS Theoretical Physics",
+          year: "1999 - 2004",
+          location: "Riverside, CA",
+        },
+        {
+          school: "Salford University",
+          degree: "MSc Audio Acoustics",
+          year: "2005 - 2007",
+          location: "Manchester, England",
+        },
+        {
+          school: "Dev Bootcamp",
+          year: "Summer 2013",
+          location: "San Francisco, CA",
+        },
+      ];
 
+      const experienceEl = document.getElementById("experience");
+      const educationEl = document.getElementById("education");
 
-    const experienceEl = document.getElementById('experience');
-    const educationEl = document.getElementById('education');
+      for (let i in jobs) {
+        const job = new Experience(jobs[i]);
+        experienceEl.appendChild(job.render());
+      }
 
-    for (let i in jobs) {
-      const job = new Experience(jobs[i]);
-      experienceEl.appendChild(job.render());
-    }
-
-    for (let i in education) {
-      const job = new Education(education[i]);
-      educationEl.appendChild(job.render());
-    }
-
-  </script>
-</body>
-
+      for (let i in education) {
+        const job = new Education(education[i]);
+        educationEl.appendChild(job.render());
+      }
+    </script>
+  </body>
 </html>
