@@ -74,6 +74,10 @@ header {
   font-weight: 800;
 }
 
+.header-name .name {
+  text-transform: uppercase;
+}
+
 .header-title {
   color: var(--sub-heading-color);
 }
