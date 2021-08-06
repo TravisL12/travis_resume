@@ -23,3 +23,5 @@ class Education {
     return this.el.content.firstElementChild;
   }
 }
+
+export default Education;

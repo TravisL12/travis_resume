@@ -23,3 +23,5 @@ class Experience {
     return this.el.content.firstElementChild;
   }
 }
+
+export default Experience;
