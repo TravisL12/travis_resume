@@ -59,6 +59,7 @@ ul li {
 .panel h1 {
   font-size: 20px;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 /* Header name */
