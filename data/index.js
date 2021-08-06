@@ -8,7 +8,7 @@ export default {
     { name: "styled components / d3" },
   ],
   additionalSkills: [
-    { name: "webkit" },
+    { name: "webpack" },
     { name: "graphql / mysql" },
     { name: "ruby / php / python" },
   ],
