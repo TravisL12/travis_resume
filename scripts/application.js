@@ -2,6 +2,22 @@ import data from "../data/index.js";
 import Experience from "./experience.js";
 import Education from "./education.js";
 
+const fillIn = (selector, info) => {
+  const el = document.querySelector(selector);
+  el.textContent = info;
+};
+
+document.title = `${data.firstName} ${data.lastName} - Resume`;
+
+fillIn(".first", data.firstName);
+fillIn(".last", data.lastName);
+fillIn("#email", data.email);
+fillIn("#location", data.location);
+
+fillIn("#intro", data.intro);
+fillIn("#extra-info", data.extraInfo);
+fillIn("#position-title", data.positionTitle);
+
 const experienceEl = document.getElementById("experience");
 const educationEl = document.getElementById("education");
 const skillsEl = document.querySelector("#skills ul");

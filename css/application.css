@@ -73,6 +73,7 @@ header {
 .header-name {
   font-size: 50px;
   font-weight: 800;
+  text-transform: uppercase;
 }
 
 .header-name .name {
