@@ -29,6 +29,11 @@ const buildEducation = (education) => {
 
 const buildSkills = (skills) => {
   const skillsEl = document.querySelector("#skills ul");
+  if (!skills || skills.length === 0) {
+    document.querySelector("#skills").remove();
+    return;
+  }
+
   for (let i in skills) {
     const skill = skills[i];
     if (!skill.hide) {
@@ -41,6 +46,11 @@ const buildSkills = (skills) => {
 
 const buildAdditionalSkills = (additionalSkills) => {
   const additionalSkillsEl = document.querySelector("#additional-skills ul");
+  if (!additionalSkills || additionalSkills.length === 0) {
+    document.querySelector("#additional-skills").remove();
+    return;
+  }
+
   for (let i in additionalSkills) {
     const skill = additionalSkills[i];
     if (!skill.hide) {
