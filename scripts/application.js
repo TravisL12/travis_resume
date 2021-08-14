@@ -41,22 +41,28 @@ const buildSkills = (skills) => {
 
 const buildAdditionalSkills = (additionalSkills) => {
   const additionalSkillsEl = document.querySelector("#additional-skills ul");
-  const skill = additionalSkills[i];
-  if (!skill.hide) {
-    const item = document.createElement("li");
-    item.textContent = skill.name;
-    additionalSkillsEl.appendChild(item);
+  for (let i in additionalSkills) {
+    const skill = additionalSkills[i];
+    if (!skill.hide) {
+      const item = document.createElement("li");
+      item.textContent = skill.name;
+      additionalSkillsEl.appendChild(item);
+    }
   }
 };
 
-// FINISH THIS PART!!!!!!!!!!!!!!!
 const buildSites = (sites) => {
   const sitesEl = document.querySelector(".header-portfolio ul");
-  const skill = additionalSkills[i];
-  if (!skill.hide) {
-    const item = document.createElement("li");
-    item.textContent = skill.name;
-    additionalSkillsEl.appendChild(item);
+  for (let i in sites) {
+    const site = sites[i];
+    const list = document.createElement("li");
+    list.innerHTML = `
+      <a href="${site.url}" target="_blank">
+        <span class="${site.icon}"></span>
+        <span>${site.display}</span>
+      </a>
+      `;
+    sitesEl.appendChild(list);
   }
 };
 
