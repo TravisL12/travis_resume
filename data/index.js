@@ -11,9 +11,21 @@ export default {
                   years in San Francisco. I spent a lot of time measuring noise,
                   crunching data using Excel VBA scripts, and writing reports.`,
   sites: [
-    { display: "redundantrobot.com", url: "https://redundantrobot.com" },
-    { display: "github.com/TravisL12", url: "https://github.com/TravisL12" },
-    { display: "codepen.io/TravisL12", url: "https://codepen.io/TravisL12" },
+    {
+      display: "redundantrobot.com",
+      icon: "icon web-icon",
+      url: "https://redundantrobot.com",
+    },
+    {
+      display: "github.com/TravisL12",
+      icon: "icon github-icon",
+      url: "https://github.com/TravisL12",
+    },
+    {
+      display: "codepen.io/TravisL12",
+      icon: "icon codepen-icon",
+      url: "https://codepen.io/TravisL12",
+    },
   ],
   skills: [
     { name: "react" },

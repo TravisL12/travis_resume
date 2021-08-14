@@ -49,6 +49,17 @@ const buildAdditionalSkills = (additionalSkills) => {
   }
 };
 
+// FINISH THIS PART!!!!!!!!!!!!!!!
+const buildSites = (sites) => {
+  const sitesEl = document.querySelector(".header-portfolio ul");
+  const skill = additionalSkills[i];
+  if (!skill.hide) {
+    const item = document.createElement("li");
+    item.textContent = skill.name;
+    additionalSkillsEl.appendChild(item);
+  }
+};
+
 document.title = `${data.firstName} ${data.lastName} - Resume`;
 
 fillInfo(".first", data.firstName);
@@ -64,3 +75,4 @@ buildExperience(data.experience);
 buildEducation(data.education);
 buildSkills(data.skills);
 buildAdditionalSkills(data.additionalSkills);
+buildSites(data.sites);
