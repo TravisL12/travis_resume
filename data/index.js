@@ -1,4 +1,32 @@
 export default {
+  firstName: "Travis",
+  lastName: "Lawrence",
+  email: "travis.lawrence12@gmail.com",
+  location: "San Francisco, CA",
+  positionTitle: "Front End Developer",
+  intro: `The rotation of languages and technologies year over year is
+                part of the job, and I'm comfortable knowing that there will be
+                more to come in the years ahead.`,
+  extraInfo: `Prior to Web Development I was an acoustic consultant for 6
+                  years in San Francisco. I spent a lot of time measuring noise,
+                  crunching data using Excel VBA scripts, and writing reports.`,
+  sites: [
+    {
+      display: "redundantrobot.com",
+      icon: "icon web-icon",
+      url: "https://redundantrobot.com",
+    },
+    {
+      display: "github.com/TravisL12",
+      icon: "icon github-icon",
+      url: "https://github.com/TravisL12",
+    },
+    {
+      display: "codepen.io/TravisL12",
+      icon: "icon codepen-icon",
+      url: "https://codepen.io/TravisL12",
+    },
+  ],
   skills: [
     { name: "react" },
     { name: "typescript / flow" },
