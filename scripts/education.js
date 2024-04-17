@@ -12,7 +12,6 @@ class Education {
     <div class="education-item">
       <p class="degree">${this.degree || ""}</p>
       <p class="school">${this.school}</p>
-      <p class="year">${this.year}</p>
       <p class="location">${this.location}</p>
     </div>
     `;
